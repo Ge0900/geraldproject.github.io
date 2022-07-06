@@ -1,0 +1,3440 @@
+/** @format */
+/** @format */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 0%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  color: hsl(0deg, 0%, 0%);
+}
+
+/** @format */
+.container {
+  width: 100%;
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/** @format */
+.bg--dark {
+  background-color: hsl(0deg, 0%, 0%);
+}
+
+.text--dark {
+  color: hsl(0deg, 0%, 0%);
+}
+
+.hvr--dark:hover {
+  color: hsl(0deg, 0%, 0%);
+}
+
+.btn.bg--dark {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(0deg, 0%, 0%);
+}
+.btn.bg--dark:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--dark {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--dark:hover {
+  background: black;
+}
+
+.btn-t-d.bg--dark {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--dark:hover {
+  background: black;
+}
+
+.btn3.bg--dark {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(0deg, 0%, 0%);
+}
+.btn3.bg--dark:hover {
+  background: black;
+}
+
+.btn4.bg--dark {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(0deg, 0%, 0%);
+}
+.btn4.bg--dark:hover {
+  background: black;
+}
+
+.btn5.bg--dark {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(0deg, 0%, 0%);
+}
+.btn5.bg--dark:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--dark {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(0deg, 0%, 0%);
+}
+.btn6.bg--dark:hover {
+  background: black;
+  border: 7rem;
+}
+
+.border-t.bg--dark {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(0deg, 0%, 0%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--light {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.text--light {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.hvr--light:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.btn.bg--light {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(0deg, 0%, 100%);
+}
+.btn.bg--light:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--light {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--light:hover {
+  background: #b3b3b3;
+}
+
+.btn-t-d.bg--light {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--light:hover {
+  background: #cccccc;
+}
+
+.btn3.bg--light {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(0deg, 0%, 100%);
+}
+.btn3.bg--light:hover {
+  background: #b3b3b3;
+}
+
+.btn4.bg--light {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(0deg, 0%, 100%);
+}
+.btn4.bg--light:hover {
+  background: #b3b3b3;
+}
+
+.btn5.bg--light {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(0deg, 0%, 100%);
+}
+.btn5.bg--light:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--light {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(0deg, 0%, 100%);
+}
+.btn6.bg--light:hover {
+  background: #b3b3b3;
+  border: 7rem;
+}
+
+.border-t.bg--light {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(0deg, 0%, 100%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--primary {
+  background-color: hsl(39deg, 100%, 50%);
+}
+
+.text--primary {
+  color: hsl(39deg, 100%, 50%);
+}
+
+.hvr--primary:hover {
+  color: hsl(39deg, 100%, 50%);
+}
+
+.btn.bg--primary {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(39deg, 100%, 50%);
+}
+.btn.bg--primary:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--primary {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--primary:hover {
+  background: #664200;
+}
+
+.btn-t-d.bg--primary {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--primary:hover {
+  background: #996300;
+}
+
+.btn3.bg--primary {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(39deg, 100%, 50%);
+}
+.btn3.bg--primary:hover {
+  background: #664200;
+}
+
+.btn4.bg--primary {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(39deg, 100%, 50%);
+}
+.btn4.bg--primary:hover {
+  background: #664200;
+}
+
+.btn5.bg--primary {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(39deg, 100%, 50%);
+}
+.btn5.bg--primary:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--primary {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(39deg, 100%, 50%);
+}
+.btn6.bg--primary:hover {
+  background: #664200;
+  border: 7rem;
+}
+
+.border-t.bg--primary {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(39deg, 100%, 50%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--gray {
+  background-color: hsl(0deg, 0%, 77%);
+}
+
+.text--gray {
+  color: hsl(0deg, 0%, 77%);
+}
+
+.hvr--gray:hover {
+  color: hsl(0deg, 0%, 77%);
+}
+
+.btn.bg--gray {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(0deg, 0%, 77%);
+}
+.btn.bg--gray:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--gray {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--gray:hover {
+  background: #787878;
+}
+
+.btn-t-d.bg--gray {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--gray:hover {
+  background: #919191;
+}
+
+.btn3.bg--gray {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(0deg, 0%, 77%);
+}
+.btn3.bg--gray:hover {
+  background: #787878;
+}
+
+.btn4.bg--gray {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(0deg, 0%, 77%);
+}
+.btn4.bg--gray:hover {
+  background: #787878;
+}
+
+.btn5.bg--gray {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(0deg, 0%, 77%);
+}
+.btn5.bg--gray:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--gray {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(0deg, 0%, 77%);
+}
+.btn6.bg--gray:hover {
+  background: #787878;
+  border: 7rem;
+}
+
+.border-t.bg--gray {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--grays {
+  background-color: #efefef;
+}
+
+.text--grays {
+  color: #efefef;
+}
+
+.hvr--grays:hover {
+  color: #efefef;
+}
+
+.btn.bg--grays {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: #efefef;
+}
+.btn.bg--grays:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--grays {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--grays:hover {
+  background: #a3a3a3;
+}
+
+.btn-t-d.bg--grays {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--grays:hover {
+  background: #bcbcbc;
+}
+
+.btn3.bg--grays {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: #efefef;
+}
+.btn3.bg--grays:hover {
+  background: #a3a3a3;
+}
+
+.btn4.bg--grays {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: #efefef;
+}
+.btn4.bg--grays:hover {
+  background: #a3a3a3;
+}
+
+.btn5.bg--grays {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: #efefef;
+}
+.btn5.bg--grays:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--grays {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: #efefef;
+}
+.btn6.bg--grays:hover {
+  background: #a3a3a3;
+  border: 7rem;
+}
+
+.border-t.bg--grays {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: #efefef;
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--lightgray {
+  background-color: hsl(204deg, 2%, 58%);
+}
+
+.text--lightgray {
+  color: hsl(204deg, 2%, 58%);
+}
+
+.hvr--lightgray:hover {
+  color: hsl(204deg, 2%, 58%);
+}
+
+.btn.bg--lightgray {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(204deg, 2%, 58%);
+}
+.btn.bg--lightgray:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--lightgray {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--lightgray:hover {
+  background: #464849;
+}
+
+.btn-t-d.bg--lightgray {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--lightgray:hover {
+  background: #5f6163;
+}
+
+.btn3.bg--lightgray {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(204deg, 2%, 58%);
+}
+.btn3.bg--lightgray:hover {
+  background: #464849;
+}
+
+.btn4.bg--lightgray {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(204deg, 2%, 58%);
+}
+.btn4.bg--lightgray:hover {
+  background: #464849;
+}
+
+.btn5.bg--lightgray {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(204deg, 2%, 58%);
+}
+.btn5.bg--lightgray:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--lightgray {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(204deg, 2%, 58%);
+}
+.btn6.bg--lightgray:hover {
+  background: #464849;
+  border: 7rem;
+}
+
+.border-t.bg--lightgray {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(204deg, 2%, 58%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--blue {
+  background-color: hsl(213deg, 77%, 49%);
+}
+
+.text--blue {
+  color: hsl(213deg, 77%, 49%);
+}
+
+.hvr--blue:hover {
+  color: hsl(213deg, 77%, 49%);
+}
+
+.btn.bg--blue {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(213deg, 77%, 49%);
+}
+.btn.bg--blue:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--blue {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--blue:hover {
+  background: #0b2d56;
+}
+
+.btn-t-d.bg--blue {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--blue:hover {
+  background: #114483;
+}
+
+.btn3.bg--blue {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(213deg, 77%, 49%);
+}
+.btn3.bg--blue:hover {
+  background: #0b2d56;
+}
+
+.btn4.bg--blue {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(213deg, 77%, 49%);
+}
+.btn4.bg--blue:hover {
+  background: #0b2d56;
+}
+
+.btn5.bg--blue {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(213deg, 77%, 49%);
+}
+.btn5.bg--blue:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--blue {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(213deg, 77%, 49%);
+}
+.btn6.bg--blue:hover {
+  background: #0b2d56;
+  border: 7rem;
+}
+
+.border-t.bg--blue {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(213deg, 77%, 49%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--green {
+  background-color: hsl(159deg, 58%, 30%);
+}
+
+.text--green {
+  color: hsl(159deg, 58%, 30%);
+}
+
+.hvr--green:hover {
+  color: hsl(159deg, 58%, 30%);
+}
+
+.btn.bg--green {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(159deg, 58%, 30%);
+}
+.btn.bg--green:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--green {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--green:hover {
+  background: black;
+}
+
+.btn-t-d.bg--green {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--green:hover {
+  background: #0b281e;
+}
+
+.btn3.bg--green {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(159deg, 58%, 30%);
+}
+.btn3.bg--green:hover {
+  background: black;
+}
+
+.btn4.bg--green {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(159deg, 58%, 30%);
+}
+.btn4.bg--green:hover {
+  background: black;
+}
+
+.btn5.bg--green {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(159deg, 58%, 30%);
+}
+.btn5.bg--green:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--green {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(159deg, 58%, 30%);
+}
+.btn6.bg--green:hover {
+  background: black;
+  border: 7rem;
+}
+
+.border-t.bg--green {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(159deg, 58%, 30%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--darkgreen {
+  background-color: hsl(164deg, 31%, 17%);
+}
+
+.text--darkgreen {
+  color: hsl(164deg, 31%, 17%);
+}
+
+.hvr--darkgreen:hover {
+  color: hsl(164deg, 31%, 17%);
+}
+
+.btn.bg--darkgreen {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(164deg, 31%, 17%);
+}
+.btn.bg--darkgreen:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--darkgreen {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--darkgreen:hover {
+  background: black;
+}
+
+.btn-t-d.bg--darkgreen {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--darkgreen:hover {
+  background: black;
+}
+
+.btn3.bg--darkgreen {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(164deg, 31%, 17%);
+}
+.btn3.bg--darkgreen:hover {
+  background: black;
+}
+
+.btn4.bg--darkgreen {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(164deg, 31%, 17%);
+}
+.btn4.bg--darkgreen:hover {
+  background: black;
+}
+
+.btn5.bg--darkgreen {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(164deg, 31%, 17%);
+}
+.btn5.bg--darkgreen:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--darkgreen {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(164deg, 31%, 17%);
+}
+.btn6.bg--darkgreen:hover {
+  background: black;
+  border: 7rem;
+}
+
+.border-t.bg--darkgreen {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--lightgreen {
+  background-color: hsl(159deg, 30%, 87%);
+}
+
+.text--lightgreen {
+  color: hsl(159deg, 30%, 87%);
+}
+
+.hvr--lightgreen:hover {
+  color: hsl(159deg, 30%, 87%);
+}
+
+.btn.bg--lightgreen {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(159deg, 30%, 87%);
+}
+.btn.bg--lightgreen:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--lightgreen {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--lightgreen:hover {
+  background: #70b29b;
+}
+
+.btn-t-d.bg--lightgreen {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--lightgreen:hover {
+  background: #92c4b2;
+}
+
+.btn3.bg--lightgreen {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(159deg, 30%, 87%);
+}
+.btn3.bg--lightgreen:hover {
+  background: #70b29b;
+}
+
+.btn4.bg--lightgreen {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(159deg, 30%, 87%);
+}
+.btn4.bg--lightgreen:hover {
+  background: #70b29b;
+}
+
+.btn5.bg--lightgreen {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(159deg, 30%, 87%);
+}
+.btn5.bg--lightgreen:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--lightgreen {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(159deg, 30%, 87%);
+}
+.btn6.bg--lightgreen:hover {
+  background: #70b29b;
+  border: 7rem;
+}
+
+.border-t.bg--lightgreen {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(159deg, 30%, 87%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--mintgreen {
+  background-color: rgb(212, 233, 226);
+}
+
+.text--mintgreen {
+  color: rgb(212, 233, 226);
+}
+
+.hvr--mintgreen:hover {
+  color: rgb(212, 233, 226);
+}
+
+.btn.bg--mintgreen {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: rgb(212, 233, 226);
+}
+.btn.bg--mintgreen:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--mintgreen {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--mintgreen:hover {
+  background: #6fb59e;
+}
+
+.btn-t-d.bg--mintgreen {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--mintgreen:hover {
+  background: #91c6b4;
+}
+
+.btn3.bg--mintgreen {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: rgb(212, 233, 226);
+}
+.btn3.bg--mintgreen:hover {
+  background: #6fb59e;
+}
+
+.btn4.bg--mintgreen {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: rgb(212, 233, 226);
+}
+.btn4.bg--mintgreen:hover {
+  background: #6fb59e;
+}
+
+.btn5.bg--mintgreen {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: rgb(212, 233, 226);
+}
+.btn5.bg--mintgreen:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--mintgreen {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: rgb(212, 233, 226);
+}
+.btn6.bg--mintgreen:hover {
+  background: #6fb59e;
+  border: 7rem;
+}
+
+.border-t.bg--mintgreen {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: rgb(212, 233, 226);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--indigo {
+  background-color: hsla(241deg, 77%, 44%, 0.938);
+}
+
+.text--indigo {
+  color: hsla(241deg, 77%, 44%, 0.938);
+}
+
+.hvr--indigo:hover {
+  color: hsla(241deg, 77%, 44%, 0.938);
+}
+
+.btn.bg--indigo {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsla(241deg, 77%, 44%, 0.938);
+}
+.btn.bg--indigo:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--indigo {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--indigo:hover {
+  background: rgba(9, 8, 63, 0.938);
+}
+
+.btn-t-d.bg--indigo {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--indigo:hover {
+  background: rgba(16, 14, 108, 0.938);
+}
+
+.btn3.bg--indigo {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsla(241deg, 77%, 44%, 0.938);
+}
+.btn3.bg--indigo:hover {
+  background: rgba(9, 8, 63, 0.938);
+}
+
+.btn4.bg--indigo {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsla(241deg, 77%, 44%, 0.938);
+}
+.btn4.bg--indigo:hover {
+  background: rgba(9, 8, 63, 0.938);
+}
+
+.btn5.bg--indigo {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsla(241deg, 77%, 44%, 0.938);
+}
+.btn5.bg--indigo:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--indigo {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsla(241deg, 77%, 44%, 0.938);
+}
+.btn6.bg--indigo:hover {
+  background: rgba(9, 8, 63, 0.938);
+  border: 7rem;
+}
+
+.border-t.bg--indigo {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsla(241deg, 77%, 44%, 0.938);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--semigray {
+  background-color: rgba(221, 220, 220, 0.631372549);
+}
+
+.text--semigray {
+  color: rgba(221, 220, 220, 0.631372549);
+}
+
+.hvr--semigray:hover {
+  color: rgba(221, 220, 220, 0.631372549);
+}
+
+.btn.bg--semigray {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: rgba(221, 220, 220, 0.631372549);
+}
+.btn.bg--semigray:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--semigray {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--semigray:hover {
+  background: rgba(146, 142, 142, 0.631372549);
+}
+
+.btn-t-d.bg--semigray {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--semigray:hover {
+  background: rgba(171, 168, 168, 0.631372549);
+}
+
+.btn3.bg--semigray {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: rgba(221, 220, 220, 0.631372549);
+}
+.btn3.bg--semigray:hover {
+  background: rgba(146, 142, 142, 0.631372549);
+}
+
+.btn4.bg--semigray {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: rgba(221, 220, 220, 0.631372549);
+}
+.btn4.bg--semigray:hover {
+  background: rgba(146, 142, 142, 0.631372549);
+}
+
+.btn5.bg--semigray {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: rgba(221, 220, 220, 0.631372549);
+}
+.btn5.bg--semigray:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--semigray {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: rgba(221, 220, 220, 0.631372549);
+}
+.btn6.bg--semigray:hover {
+  background: rgba(146, 142, 142, 0.631372549);
+  border: 7rem;
+}
+
+.border-t.bg--semigray {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: rgba(221, 220, 220, 0.631372549);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--pink {
+  background-color: hsl(324deg, 99%, 55%);
+}
+
+.text--pink {
+  color: hsl(324deg, 99%, 55%);
+}
+
+.hvr--pink:hover {
+  color: hsl(324deg, 99%, 55%);
+}
+
+.btn.bg--pink {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(324deg, 99%, 55%);
+}
+.btn.bg--pink:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--pink {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--pink:hover {
+  background: #7f014c;
+}
+
+.btn-t-d.bg--pink {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--pink:hover {
+  background: #b2016b;
+}
+
+.btn3.bg--pink {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(324deg, 99%, 55%);
+}
+.btn3.bg--pink:hover {
+  background: #7f014c;
+}
+
+.btn4.bg--pink {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(324deg, 99%, 55%);
+}
+.btn4.bg--pink:hover {
+  background: #7f014c;
+}
+
+.btn5.bg--pink {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(324deg, 99%, 55%);
+}
+.btn5.bg--pink:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--pink {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(324deg, 99%, 55%);
+}
+.btn6.bg--pink:hover {
+  background: #7f014c;
+  border: 7rem;
+}
+
+.border-t.bg--pink {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(324deg, 99%, 55%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--cream {
+  background-color: hsl(43deg, 21%, 94%);
+}
+
+.text--cream {
+  color: hsl(43deg, 21%, 94%);
+}
+
+.hvr--cream:hover {
+  color: hsl(43deg, 21%, 94%);
+}
+
+.btn.bg--cream {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: hsl(43deg, 21%, 94%);
+}
+.btn.bg--cream:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--cream {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--cream:hover {
+  background: #b6ac90;
+}
+
+.btn-t-d.bg--cream {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--cream:hover {
+  background: #cbc3af;
+}
+
+.btn3.bg--cream {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(43deg, 21%, 94%);
+}
+.btn3.bg--cream:hover {
+  background: #b6ac90;
+}
+
+.btn4.bg--cream {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(43deg, 21%, 94%);
+}
+.btn4.bg--cream:hover {
+  background: #b6ac90;
+}
+
+.btn5.bg--cream {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: hsl(43deg, 21%, 94%);
+}
+.btn5.bg--cream:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--cream {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: hsl(43deg, 21%, 94%);
+}
+.btn6.bg--cream:hover {
+  background: #b6ac90;
+  border: 7rem;
+}
+
+.border-t.bg--cream {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: hsl(43deg, 21%, 94%);
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.bg--transparent {
+  background-color: transparent;
+}
+
+.text--transparent {
+  color: transparent;
+}
+
+.hvr--transparent:hover {
+  color: transparent;
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.btn-t-w.bg--transparent {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-w.bg--transparent:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.btn-t-d.bg--transparent {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn-t-d.bg--transparent:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.btn3.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: inline-block;
+  background: transparent;
+}
+.btn3.bg--transparent:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.btn4.bg--transparent {
+  padding: 1rem 3rem;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn4.bg--transparent:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.btn5.bg--transparent {
+  padding: 1.5rem 1.9rem;
+  border-radius: 3rem;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  background: transparent;
+}
+.btn5.bg--transparent:hover {
+  background: hsl(164deg, 31%, 17%);
+}
+
+.btn6.bg--transparent {
+  padding: 1.2rem 7rem;
+  border-radius: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn6.bg--transparent:hover {
+  background: rgba(0, 0, 0, 0);
+  border: 7rem;
+}
+
+.border-t.bg--transparent {
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(213deg, 77%, 49%);
+  color: hsl(213deg, 77%, 49%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-block;
+  background: transparent;
+}
+
+.btn.bg--transparent {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background: transparent;
+}
+.btn.bg--transparent:hover {
+  background: hsl(0deg, 0%, 77%);
+}
+
+.d--flex {
+  display: flex;
+}
+
+.d--block {
+  display: block;
+}
+
+.d--inline-block {
+  display: inline-block;
+}
+
+.d--block {
+  display: block;
+}
+
+.d--inline {
+  display: inline;
+}
+
+.d--grid {
+  display: grid;
+}
+
+.align--center {
+  align-items: center;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.align--left {
+  align-items: left;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.align--right {
+  align-items: right;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.align--justify {
+  align-items: justify;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+.justify--start {
+  justify-content: flex-start;
+}
+
+.justify--center {
+  justify-content: center;
+}
+
+.justify--end {
+  justify-content: flex-end;
+}
+
+.justify--between {
+  justify-content: space-between;
+}
+
+.justify--around {
+  justify-content: space-around;
+}
+
+.mb--1 {
+  margin-bottom: 1rem;
+}
+
+.ml--1 {
+  margin-left: 1rem;
+}
+
+.mr--1 {
+  margin-right: 1rem;
+}
+
+.mt--1 {
+  margin-top: 1rem;
+}
+
+.py--1 {
+  padding: 1rem 0;
+}
+
+.px--1 {
+  padding: 0 1rem;
+}
+
+.mb--2 {
+  margin-bottom: 2rem;
+}
+
+.ml--2 {
+  margin-left: 2rem;
+}
+
+.mr--2 {
+  margin-right: 2rem;
+}
+
+.mt--2 {
+  margin-top: 2rem;
+}
+
+.py--2 {
+  padding: 2rem 0;
+}
+
+.px--2 {
+  padding: 0 2rem;
+}
+
+.mb--3 {
+  margin-bottom: 3rem;
+}
+
+.ml--3 {
+  margin-left: 3rem;
+}
+
+.mr--3 {
+  margin-right: 3rem;
+}
+
+.mt--3 {
+  margin-top: 3rem;
+}
+
+.py--3 {
+  padding: 3rem 0;
+}
+
+.px--3 {
+  padding: 0 3rem;
+}
+
+.mb--4 {
+  margin-bottom: 4rem;
+}
+
+.ml--4 {
+  margin-left: 4rem;
+}
+
+.mr--4 {
+  margin-right: 4rem;
+}
+
+.mt--4 {
+  margin-top: 4rem;
+}
+
+.py--4 {
+  padding: 4rem 0;
+}
+
+.px--4 {
+  padding: 0 4rem;
+}
+
+.mb--5 {
+  margin-bottom: 5rem;
+}
+
+.ml--5 {
+  margin-left: 5rem;
+}
+
+.mr--5 {
+  margin-right: 5rem;
+}
+
+.mt--5 {
+  margin-top: 5rem;
+}
+
+.py--5 {
+  padding: 5rem 0;
+}
+
+.px--5 {
+  padding: 0 5rem;
+}
+
+.mb--6 {
+  margin-bottom: 6rem;
+}
+
+.ml--6 {
+  margin-left: 6rem;
+}
+
+.mr--6 {
+  margin-right: 6rem;
+}
+
+.mt--6 {
+  margin-top: 6rem;
+}
+
+.py--6 {
+  padding: 6rem 0;
+}
+
+.px--6 {
+  padding: 0 6rem;
+}
+
+.mb--7 {
+  margin-bottom: 7rem;
+}
+
+.ml--7 {
+  margin-left: 7rem;
+}
+
+.mr--7 {
+  margin-right: 7rem;
+}
+
+.mt--7 {
+  margin-top: 7rem;
+}
+
+.py--7 {
+  padding: 7rem 0;
+}
+
+.px--7 {
+  padding: 0 7rem;
+}
+
+.mb--8 {
+  margin-bottom: 8rem;
+}
+
+.ml--8 {
+  margin-left: 8rem;
+}
+
+.mr--8 {
+  margin-right: 8rem;
+}
+
+.mt--8 {
+  margin-top: 8rem;
+}
+
+.py--8 {
+  padding: 8rem 0;
+}
+
+.px--8 {
+  padding: 0 8rem;
+}
+
+.mb--9 {
+  margin-bottom: 9rem;
+}
+
+.ml--9 {
+  margin-left: 9rem;
+}
+
+.mr--9 {
+  margin-right: 9rem;
+}
+
+.mt--9 {
+  margin-top: 9rem;
+}
+
+.py--9 {
+  padding: 9rem 0;
+}
+
+.px--9 {
+  padding: 0 9rem;
+}
+
+.mb--10 {
+  margin-bottom: 10rem;
+}
+
+.ml--10 {
+  margin-left: 10rem;
+}
+
+.mr--10 {
+  margin-right: 10rem;
+}
+
+.mt--10 {
+  margin-top: 10rem;
+}
+
+.py--10 {
+  padding: 10rem 0;
+}
+
+.px--10 {
+  padding: 0 10rem;
+}
+
+.mb--11 {
+  margin-bottom: 11rem;
+}
+
+.ml--11 {
+  margin-left: 11rem;
+}
+
+.mr--11 {
+  margin-right: 11rem;
+}
+
+.mt--11 {
+  margin-top: 11rem;
+}
+
+.py--11 {
+  padding: 11rem 0;
+}
+
+.px--11 {
+  padding: 0 11rem;
+}
+
+.mb--12 {
+  margin-bottom: 12rem;
+}
+
+.ml--12 {
+  margin-left: 12rem;
+}
+
+.mr--12 {
+  margin-right: 12rem;
+}
+
+.mt--12 {
+  margin-top: 12rem;
+}
+
+.py--12 {
+  padding: 12rem 0;
+}
+
+.px--12 {
+  padding: 0 12rem;
+}
+
+.mb--13 {
+  margin-bottom: 13rem;
+}
+
+.ml--13 {
+  margin-left: 13rem;
+}
+
+.mr--13 {
+  margin-right: 13rem;
+}
+
+.mt--13 {
+  margin-top: 13rem;
+}
+
+.py--13 {
+  padding: 13rem 0;
+}
+
+.px--13 {
+  padding: 0 13rem;
+}
+
+.mb--14 {
+  margin-bottom: 14rem;
+}
+
+.ml--14 {
+  margin-left: 14rem;
+}
+
+.mr--14 {
+  margin-right: 14rem;
+}
+
+.mt--14 {
+  margin-top: 14rem;
+}
+
+.py--14 {
+  padding: 14rem 0;
+}
+
+.px--14 {
+  padding: 0 14rem;
+}
+
+.mb--15 {
+  margin-bottom: 15rem;
+}
+
+.ml--15 {
+  margin-left: 15rem;
+}
+
+.mr--15 {
+  margin-right: 15rem;
+}
+
+.mt--15 {
+  margin-top: 15rem;
+}
+
+.py--15 {
+  padding: 15rem 0;
+}
+
+.px--15 {
+  padding: 0 15rem;
+}
+
+.mb--16 {
+  margin-bottom: 16rem;
+}
+
+.ml--16 {
+  margin-left: 16rem;
+}
+
+.mr--16 {
+  margin-right: 16rem;
+}
+
+.mt--16 {
+  margin-top: 16rem;
+}
+
+.py--16 {
+  padding: 16rem 0;
+}
+
+.px--16 {
+  padding: 0 16rem;
+}
+
+.mb--17 {
+  margin-bottom: 17rem;
+}
+
+.ml--17 {
+  margin-left: 17rem;
+}
+
+.mr--17 {
+  margin-right: 17rem;
+}
+
+.mt--17 {
+  margin-top: 17rem;
+}
+
+.py--17 {
+  padding: 17rem 0;
+}
+
+.px--17 {
+  padding: 0 17rem;
+}
+
+.mb--18 {
+  margin-bottom: 18rem;
+}
+
+.ml--18 {
+  margin-left: 18rem;
+}
+
+.mr--18 {
+  margin-right: 18rem;
+}
+
+.mt--18 {
+  margin-top: 18rem;
+}
+
+.py--18 {
+  padding: 18rem 0;
+}
+
+.px--18 {
+  padding: 0 18rem;
+}
+
+.mb--19 {
+  margin-bottom: 19rem;
+}
+
+.ml--19 {
+  margin-left: 19rem;
+}
+
+.mr--19 {
+  margin-right: 19rem;
+}
+
+.mt--19 {
+  margin-top: 19rem;
+}
+
+.py--19 {
+  padding: 19rem 0;
+}
+
+.px--19 {
+  padding: 0 19rem;
+}
+
+.mb--20 {
+  margin-bottom: 20rem;
+}
+
+.ml--20 {
+  margin-left: 20rem;
+}
+
+.mr--20 {
+  margin-right: 20rem;
+}
+
+.mt--20 {
+  margin-top: 20rem;
+}
+
+.py--20 {
+  padding: 20rem 0;
+}
+
+.px--20 {
+  padding: 0 20rem;
+}
+
+.border-r {
+  border-right: 1px solid wheat;
+}
+
+/** @format */
+.container {
+  width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+nav ul li {
+  padding: 2rem;
+}
+nav ul a {
+  font-size: 1.7rem;
+  font-weight: 750;
+}
+
+.nav__open {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav__open {
+    display: block;
+    border-bottom: 1px solid rgba(221, 220, 220, 0.631372549);
+    padding: 2rem 0;
+    margin-bottom: 2.2rem;
+    background: hsl(324deg, 99%, 55%);
+  }
+}
+.nav__open ul {
+  display: flex;
+}
+.nav__open ul li a {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.toggle__menu {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .toggle__menu {
+    display: block;
+    margin-left: 60rem;
+  }
+}
+.toggle__menu span {
+  background-color: hsl(324deg, 99%, 55%);
+  display: block;
+  width: 2.5rem;
+  height: 5px;
+  margin: 0.4rem;
+  border-radius: 2.2rem;
+}
+
+.toggle__menu.open span:nth-child(1) {
+  transform: rotate(-45deg) translate(-13px, -1px);
+}
+.toggle__menu.open span:nth-child(2) {
+  opacity: 0;
+}
+.toggle__menu.open span:nth-child(3) {
+  transform: rotate(45deg) translate(-13px, -1px);
+}
+
+.header__actions.open {
+  right: 1px;
+}
+
+.mobile__nav {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .mobile__nav {
+    display: grid;
+  }
+}
+
+.header {
+  z-index: 9999;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.07);
+  top: 0;
+  padding: 0 50rem;
+  padding-left: 60rem;
+}
+@media screen and (max-width: 48rem) {
+  .header {
+    padding-left: 2rem;
+    position: fixed;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__actions {
+    position: fixed;
+    top: 8.1rem;
+    left: -900px;
+    background: hsl(0deg, 0%, 100%);
+    height: 300vh;
+    text-align: center;
+    transition: 2s ease;
+  }
+}
+.header__actions .border {
+  border-bottom: 1px solid rgba(221, 220, 220, 0.631372549);
+}
+@media screen and (max-width: 48rem) {
+  .header__part1 ul {
+    margin-left: 15rem;
+  }
+  .header__part1 ul li a {
+    font-size: 3rem;
+  }
+  .header__part1 ul li a:hover {
+    color: rgba(221, 220, 220, 0.631372549);
+  }
+}
+.header__part2 {
+  padding-left: 5rem;
+  border-left: 8px solid hsl(0deg, 0%, 0%);
+}
+@media screen and (max-width: 48rem) {
+  .header__part2 {
+    padding-top: 10rem;
+    margin-left: 0;
+    border-left: none;
+    padding-left: 0;
+  }
+}
+.header__part2 ul li h1 {
+  color: hsl(324deg, 99%, 55%);
+  font-size: 5rem;
+  font-weight: 800;
+}
+.header__part2 ul li h1:hover {
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid hsl(324deg, 99%, 55%);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.header__part2 ul li h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.header__part2 ul li i {
+  color: hsl(324deg, 99%, 55%);
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  padding: 1rem;
+}
+.header__part2 ul li i:hover {
+  color: hsl(0deg, 0%, 0%);
+  background: transparent;
+  border-radius: 2rem;
+  border: 1px solid hsl(324deg, 99%, 55%);
+}
+.header__part2 ul li a {
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+.header__part2 ul li a:hover {
+  text-decoration: underline;
+}
+.header__part2 img {
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  .header__part2 img {
+    display: block;
+    margin-left: 15rem;
+    height: 45rem;
+    width: 38rem;
+  }
+  .header__part2 img:hover {
+    height: 50rem;
+    width: 43rem;
+    margin-left: 13rem;
+  }
+}
+.header__icons {
+  padding: 2rem 0;
+}
+.header__nav .branding img {
+  width: 30rem;
+}
+@media screen and (max-width: 48rem) {
+  .header__nav .branding img {
+    width: 5rem;
+  }
+}
+.header__nav ul li {
+  font-weight: bold;
+}
+.header__nav ul li a {
+  font-weight: 750;
+}
+
+.header__actions.open {
+  left: 1px;
+}
+
+/** @format */
+.footer {
+  border-top: 1px solid hsl(324deg, 99%, 55%);
+}
+.footer .p1 {
+  margin-left: 60rem;
+}
+@media screen and (max-width: 48rem) {
+  .footer .p1 {
+    margin-left: 2rem;
+  }
+}
+.footer .p2 {
+  margin-right: 2rem;
+}
+
+/** @format */
+.options {
+  padding-top: 4rem;
+}
+@media screen and (max-width: 48rem) {
+  .options {
+    padding: 0 2rem;
+    padding-top: 10rem;
+  }
+}
+.options .star__nav > ul {
+  box-shadow: 0 4px 4px -2px rgb(0, 0, 0);
+  font-size: 2.2rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: bold;
+}
+@media screen and (max-width: 48rem) {
+  .options .star__nav > ul {
+    justify-content: center;
+  }
+}
+.options .star__nav > ul li {
+  padding: 2rem;
+  cursor: pointer;
+}
+.options .star__nav > ul li.active {
+  color: hsl(324deg, 99%, 55%);
+}
+.options .star__nav > ul span {
+  font-size: 1.2rem;
+}
+.options__tab__content {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .options__tab__content {
+    display: none;
+    padding-bottom: 4rem;
+  }
+}
+.options__tab__content.active {
+  display: grid;
+}
+.options__tab h1 {
+  color: hsl(0deg, 0%, 100%);
+  margin: 5rem 0;
+}
+@media screen and (max-width: 48rem) {
+  .options__tab h1 {
+    text-align: center;
+  }
+}
+.options__education {
+  border-radius: 5rem;
+  padding-bottom: 8rem;
+  margin-bottom: 6rem;
+}
+.options__education__text {
+  padding: 4rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__education__text {
+    text-align: center;
+  }
+}
+.options__education__text h2 {
+  font-size: 2.5rem;
+  color: hsl(324deg, 99%, 55%);
+  font-weight: 800;
+}
+.options__education__text h2:hover {
+  cursor: pointer;
+  background: hsl(324deg, 99%, 55%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.options__education__text h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.options__education__text h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.options__education img {
+  width: 140rem;
+  height: 70rem;
+  border-radius: 5rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__education img {
+    width: 68.5rem;
+    height: 55rem;
+  }
+}
+.options__projects {
+  margin-bottom: 16rem;
+}
+.options__projects__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+  }
+}
+.options__projects__first {
+  width: 20rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__first {
+    width: 100%;
+    display: flex;
+  }
+}
+.options__projects__first img {
+  cursor: pointer;
+  width: 55rem;
+  height: 85rem;
+  color: hsl(324deg, 99%, 55%);
+  box-shadow: -20px 20px 0px 0px;
+}
+.options__projects__first img:hover {
+  box-shadow: -20px 20px 20px 0px;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__first img {
+    width: 30rem;
+    height: 45rem;
+    box-shadow: 0px 0px 0px 0px;
+  }
+  .options__projects__first img:hover {
+    box-shadow: 0px 20px 20px 0px;
+  }
+}
+.options__projects__second {
+  text-align: left;
+  max-width: 140%;
+}
+.options__projects__second h1 {
+  font-size: 4rem;
+}
+.options__projects__second h1:hover {
+  cursor: pointer;
+  font-size: 5rem;
+  text-decoration: underline;
+}
+.options__projects__second span {
+  background-color: hsl(324deg, 99%, 55%);
+  display: block;
+  width: 23rem;
+  height: 4px;
+  margin: 2rem 0;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__second span {
+    align-items: center;
+    width: 68rem;
+  }
+}
+.options__projects__second h3 {
+  align-items: center;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+}
+.options__projects__second i {
+  color: hsl(324deg, 99%, 55%);
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+.options__projects__second h4 {
+  color: hsl(324deg, 99%, 55%);
+  font-size: 3rem;
+  margin: 5rem 0;
+}
+.options__projects__second p {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  line-height: 4rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__second p {
+    padding: 0 2rem;
+    max-width: 94%;
+  }
+}
+.options__projects__first1 {
+  text-align: left;
+  max-width: 140%;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__first1 {
+    order: 2;
+  }
+}
+.options__projects__first1 h1 {
+  font-size: 4rem;
+}
+.options__projects__first1 h1:hover {
+  cursor: pointer;
+  font-size: 5rem;
+  text-decoration: underline;
+}
+.options__projects__first1 span {
+  background-color: hsl(324deg, 99%, 55%);
+  display: block;
+  width: 23rem;
+  height: 4px;
+  margin: 2rem 0;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__first1 span {
+    align-items: center;
+    width: 68rem;
+  }
+}
+.options__projects__first1 h3 {
+  align-items: center;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+}
+.options__projects__first1 i {
+  color: hsl(324deg, 99%, 55%);
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+.options__projects__first1 h4 {
+  color: hsl(324deg, 99%, 55%);
+  font-size: 3rem;
+  margin: 5rem 0;
+}
+.options__projects__first1 p {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__first1 p {
+    padding: 0 2rem;
+    max-width: 94%;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__second1 {
+    order: 1;
+    display: flex;
+  }
+}
+.options__projects__second1 img {
+  cursor: pointer;
+  width: 55rem;
+  height: 85rem;
+  color: hsl(324deg, 99%, 55%);
+  box-shadow: 20px 20px 0px 0px;
+}
+.options__projects__second1 img:hover {
+  box-shadow: 20px 20px 20px 0px;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__second1 img {
+    width: 30rem;
+    height: 45rem;
+    box-shadow: 0px 0px 0px 0px;
+  }
+  .options__projects__second1 img:hover {
+    box-shadow: 0px 20px 20px 0px;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__part1 {
+    display: none;
+  }
+}
+.options__projects__part2 {
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__part2 {
+    display: block;
+    padding: 2rem;
+    order: 2;
+    text-align: left;
+  }
+}
+.options__projects__part2 h1 {
+  text-align: left;
+  font-size: 4rem;
+}
+.options__projects__part2 h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: hsl(324deg, 99%, 55%);
+}
+.options__projects__part2 span {
+  background-color: hsl(324deg, 99%, 55%);
+  display: block;
+  width: 23rem;
+  height: 4px;
+  margin: 2rem 0;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__projects__part2 span {
+    align-items: center;
+    width: 36rem;
+  }
+}
+.options__projects__part2 h3 {
+  align-items: center;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.3rem;
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
+.options__projects__part2 i {
+  color: hsl(324deg, 99%, 55%);
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+.options__projects__part2 h4 {
+  color: hsl(324deg, 99%, 55%);
+  font-size: 3rem;
+  margin: 5rem 0;
+}
+.options__contacts {
+  padding: 5rem 0;
+  padding-bottom: 20rem;
+}
+.options__contacts p {
+  text-align: left;
+  font-size: 2.5rem;
+  padding: 5rem 0;
+  max-width: 30%;
+}
+@media screen and (max-width: 48rem) {
+  .options__contacts p {
+    max-width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+.options__contacts__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__contacts__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .options__contacts__forms {
+    order: 2;
+  }
+}
+.options__contacts__forms form input {
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 30.4rem;
+}
+.options__contacts__forms form textarea {
+  font-size: 3.5rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.options__contacts__info {
+  padding-left: 2rem;
+}
+@media screen and (max-width: 48rem) {
+  .options__contacts__info {
+    order: 1;
+  }
+}
+.options__contacts__info ul li {
+  padding: 3rem 0;
+}
+.options__contacts__info ul li i {
+  font-size: 3rem;
+  margin-right: 5rem;
+  color: hsl(324deg, 99%, 55%);
+}
+.options__contacts__info ul li a {
+  margin-left: 10rem;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+}
+.options__contacts__info ul li a:hover {
+  color: hsl(324deg, 99%, 55%);
+}
+@media screen and (max-width: 48rem) {
+  .options__contacts__info ul li a {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .options__contacts .button {
+    margin-left: 25rem;
+  }
+}
+
+/** @format */
+.links {
+  border: 1px solid rgba(221, 220, 220, 0.631372549);
+}
+.links__wrapper {
+  border-bottom: 1px solid rgba(221, 220, 220, 0.631372549);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2.3rem;
+}
+@media screen and (max-width: 768px) {
+  .links__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    padding-right: 2rem;
+  }
+}
+.links__item {
+  text-align: left;
+}
+@media screen and (max-width: 48rem) {
+  .links__item {
+    border-bottom: 1px solid rgba(221, 220, 220, 0.631372549);
+  }
+}
+.links__item h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2rem 0;
+}
+@media screen and (max-width: 48rem) {
+  .links__item h3 {
+    font-size: 1.7rem;
+    margin-left: 2.5rem;
+  }
+}
+.links__item h3 i {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .links__item h3 i {
+    display: block;
+    background: transparent;
+    padding: 1rem;
+  }
+  .links__item h3 i:hover {
+    background: rgba(221, 220, 220, 0.631372549);
+    border-radius: 3rem;
+  }
+}
+.links__item h3 i.open {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 768px) {
+  .links__item ul {
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+  }
+}
+.links__item ul.open {
+  max-height: 30rem;
+}
+.links__item li {
+  line-height: 4.5rem;
+}
+.links__item a {
+  display: block;
+  color: hsl(204deg, 2%, 58%);
+}
+.links__item a:hover {
+  color: hsl(0deg, 0%, 0%);
+}
+@media screen and (max-width: 768px) {
+  .links__item a {
+    margin-left: 2.2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

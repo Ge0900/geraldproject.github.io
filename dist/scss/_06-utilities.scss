@@ -1,0 +1,152 @@
+/** @format */
+
+$colors: (
+  "dark": $clr-dark,
+  "light": $clr-light,
+  "primary": $clr-primary,
+  "gray": $clr-gray,
+  "grays": $clr-grays,
+  "lightgray": $clr-lightgray,
+  "blue": $clr-blue,
+  "green": $clr-green,
+  "darkgreen": $clr-darkgreen,
+  "lightgreen": $clr-lightgreen,
+  "mintgreen": $clr-mintgreen,
+  "indigo": $clr-indigo,
+  "semigray": $clr-semigray,
+  "pink": $clr-pink,
+  "cream": $clr-cream,
+  "transparent": $clr-transparent,
+);
+
+@each $key, $val in $colors {
+  .bg {
+    &--#{$key} {
+      background-color: $val;
+    }
+  }
+  .text {
+    &--#{$key} {
+      color: $val;
+    }
+  }
+  .hvr {
+    &--#{$key} {
+      &:hover {
+        color: $val;
+      }
+    }
+  }
+
+  .btn.bg--#{$key} {
+    @include btn($val);
+  }
+
+  .btn-t-w.bg--#{$key} {
+    @include btn-t-w($val);
+  }
+
+  .btn-t-d.bg--#{$key} {
+    @include btn-t-d($val);
+  }
+
+  .btn3.bg--#{$key} {
+    @include btn3($val);
+  }
+
+  .btn4.bg--#{$key} {
+    @include btn4($val);
+  }
+  .btn5.bg--#{$key} {
+    @include btn5($val);
+  }
+
+  .btn6.bg--#{$key} {
+    @include btn6($val);
+  }
+
+  .border-t.bg--#{$key} {
+    @include border-t($val);
+  }
+
+  .btn.bg--transparent {
+    @include btn(transparent);
+  }
+}
+
+$displays: flex, block, inline-block, block, inline, grid;
+
+@each $display in $displays {
+  .d {
+    &--#{$display} {
+      display: $display;
+    }
+  }
+}
+
+$align: (
+  "center": center,
+  "left": left,
+  "right": right,
+  "justify": justify,
+);
+
+@each $key, $val in $align {
+  .align {
+    &--#{$key} {
+      align-items: $val;
+    }
+  }
+
+  .text {
+    &--#{$key} {
+      text-align: $val;
+    }
+  }
+}
+
+$justify: (
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+  "between": space-between,
+  "around": space-around,
+);
+
+@each $key, $val in $justify {
+  .justify {
+    &--#{$key} {
+      justify-content: $val;
+    }
+  }
+}
+
+@for $i from 1 through 20 {
+  .mb--#{$i} {
+    margin-bottom: $i + rem;
+  }
+
+  .ml--#{$i} {
+    margin-left: $i + rem;
+  }
+
+  .mr--#{$i} {
+    margin-right: $i + rem;
+  }
+
+  .mt--#{$i} {
+    margin-top: $i + rem;
+  }
+
+  .py--#{$i} {
+    padding: $i + rem 0;
+  }
+
+  .px--#{$i} {
+    padding: 0 $i + rem;
+  }
+}
+
+.border-r {
+  border-right: 1px solid wheat;
+}

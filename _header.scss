@@ -1,0 +1,125 @@
+/** @format */
+
+.container {
+  width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+nav {
+  @include mediaQuery($break-md) {
+    display: none;
+  }
+  ul {
+    li {
+      padding: 2rem;
+    }
+
+    a {
+      font-size: 1.7rem;
+      font-weight: 750;
+    }
+  }
+}
+
+.nav__open {
+  display: none;
+  @include mediaQuery($break-md) {
+    display: block;
+    border-bottom: 1px solid $clr-semigray;
+    padding: 2rem 0;
+    margin-bottom: 2.2rem;
+  }
+}
+
+.toggle__menu {
+  display: none;
+  cursor: pointer;
+  @include mediaQuery($break-md) {
+    display: block;
+    margin-right: 1.4rem;
+  }
+  span {
+    background-color: $clr-green;
+    display: block;
+    width: 2.5rem;
+    height: 4px;
+    margin: 0.4rem;
+    border-radius: 2.2rem;
+  }
+}
+
+.toggle__menu.open {
+  span:nth-child(1) {
+    transform: rotate(-45deg) translate(-13px, -1px);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    transform: rotate(45deg) translate(-13px, 1px);
+  }
+}
+
+.header__actions.open {
+  right: 1px;
+}
+
+.mobile__nav {
+  display: flex;
+  @include mediaQuery($break-md) {
+    display: grid;
+  }
+}
+
+.header {
+  z-index: 9999;
+  width: 100%;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+  position: fixed;
+  top: 0;
+  &__actions {
+    transition: 0.5s ease;
+    @include mediaQuery($break-md) {
+      position: fixed;
+      top: 8.1rem;
+      right: -459px;
+      background: $clr-lightgray;
+      height: 300vh;
+    }
+    ul {
+      align-items: center;
+      li:first-child {
+        font-weight: 700;
+        margin-right: 3rem;
+      }
+    }
+    i {
+      font-size: 2.2rem;
+      padding: 0 1rem;
+    }
+  }
+
+  &__nav {
+    .branding {
+      img {
+        width: 5rem;
+        @include mediaQuery {
+          width: 5.5rem;
+          padding-left: 1rem;
+        }
+      }
+    }
+    ul {
+      li {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.header__actions.open {
+  right: 1px;
+}

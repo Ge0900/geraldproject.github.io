@@ -1,0 +1,395 @@
+/** @format */
+
+.options {
+  padding-top: 4rem;
+  @include mediaQuery {
+    padding: 0 2rem;
+    padding-top: 10rem;
+  }
+  .star__nav > ul {
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0.2);
+    font-size: 2.2rem;
+    color: $clr-light;
+    font-weight: bold;
+    @include mediaQuery {
+      justify-content: center;
+    }
+    li {
+      padding: 2rem;
+      cursor: pointer;
+    }
+    li.active {
+      color: $clr-pink;
+    }
+    span {
+      font-size: 1.2rem;
+    }
+  }
+  &__tab {
+    &__content {
+      display: none;
+      @include mediaQuery($break-md) {
+        display: none;
+        padding-bottom: 4rem;
+      }
+    }
+    &__content.active {
+      display: grid;
+    }
+
+    h1 {
+      color: $clr-light;
+      margin: 5rem 0;
+      @include mediaQuery {
+        text-align: center;
+      }
+    }
+  }
+
+  &__education {
+    border-radius: 5rem;
+    padding-bottom: 8rem;
+    margin-bottom: 6rem;
+    &__text {
+      padding: 4rem;
+      @include mediaQuery {
+        text-align: center;
+      }
+      h2 {
+        font-size: 2.5rem;
+        color: $clr-pink;
+        font-weight: 800;
+        &:hover {
+          cursor: pointer;
+          background: $clr-pink;
+          color: $clr-light;
+          padding: 1rem;
+          border-radius: 2rem;
+        }
+      }
+
+      h3 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    img {
+      width: 140rem;
+      height: 70rem;
+      border-radius: 5rem;
+      @include mediaQuery {
+        width: 68.5rem;
+        height: 55rem;
+      }
+    }
+  }
+
+  &__projects {
+    margin-bottom: 16rem;
+    &__wrapper {
+      @include grid(2, 3rem);
+      @include mediaQuery {
+        @include grid(1, 3rem);
+      }
+    }
+
+    &__first {
+      width: 20rem;
+      @include mediaQuery {
+        width: 100%;
+        display: flex;
+      }
+      img {
+        cursor: pointer;
+        width: 55rem;
+        height: 85rem;
+        color: $clr-pink;
+        box-shadow: -20px 20px 0px 0px;
+        &:hover {
+          box-shadow: -20px 20px 20px 0px;
+        }
+        @include mediaQuery {
+          width: 30rem;
+          height: 45rem;
+          box-shadow: 0px 0px 0px 0px;
+          &:hover {
+            box-shadow: 0px 20px 20px 0px;
+          }
+        }
+      }
+    }
+
+    &__second {
+      text-align: left;
+      max-width: 140%;
+
+      h1 {
+        font-size: 4rem;
+        &:hover {
+          cursor: pointer;
+          font-size: 5rem;
+          text-decoration: underline;
+        }
+      }
+      span {
+        background-color: $clr-pink;
+        display: block;
+        width: 23rem;
+        height: 4px;
+        margin: 2rem 0;
+        margin-bottom: 6rem;
+        @include mediaQuery {
+          align-items: center;
+          width: 68rem;
+        }
+      }
+      h3 {
+        align-items: center;
+        color: $clr-light;
+        font-size: 2rem;
+      }
+
+      i {
+        color: $clr-pink;
+        margin-right: 2rem;
+        font-size: 1rem;
+      }
+
+      h4 {
+        color: $clr-pink;
+        font-size: 3rem;
+        margin: 5rem 0;
+      }
+
+      p {
+        color: $clr-light;
+        font-size: 2rem;
+        line-height: 4rem;
+        @include mediaQuery {
+          padding: 0 2rem;
+          max-width: 94%;
+        }
+      }
+    }
+
+    &__first1 {
+      text-align: left;
+      max-width: 140%;
+      @include mediaQuery {
+        order: 2;
+      }
+      h1 {
+        font-size: 4rem;
+        &:hover {
+          cursor: pointer;
+          font-size: 5rem;
+          text-decoration: underline;
+        }
+      }
+      span {
+        background-color: $clr-pink;
+        display: block;
+        width: 23rem;
+        height: 4px;
+        margin: 2rem 0;
+        margin-bottom: 6rem;
+        @include mediaQuery {
+          align-items: center;
+          width: 68rem;
+        }
+      }
+      h3 {
+        align-items: center;
+        color: $clr-light;
+        font-size: 2rem;
+      }
+
+      i {
+        color: $clr-pink;
+        margin-right: 2rem;
+        font-size: 1rem;
+      }
+
+      h4 {
+        color: $clr-pink;
+        font-size: 3rem;
+        margin: 5rem 0;
+      }
+
+      p {
+        color: $clr-light;
+        font-size: 1.8rem;
+        line-height: 4rem;
+        @include mediaQuery {
+          padding: 0 2rem;
+          max-width: 94%;
+        }
+      }
+    }
+
+    &__second1 {
+      @include mediaQuery {
+        order: 1;
+        display: flex;
+      }
+      img {
+        cursor: pointer;
+        width: 55rem;
+        height: 85rem;
+        color: $clr-pink;
+        box-shadow: 20px 20px 0px 0px;
+        &:hover {
+          box-shadow: 20px 20px 20px 0px;
+        }
+        @include mediaQuery {
+          width: 30rem;
+          height: 45rem;
+          box-shadow: 0px 0px 0px 0px;
+          &:hover {
+            box-shadow: 0px 20px 20px 0px;
+          }
+        }
+      }
+    }
+
+    &__part1 {
+      @include mediaQuery {
+        display: none;
+      }
+    }
+
+    &__part2 {
+      display: none;
+      @include mediaQuery {
+        display: block;
+        padding: 2rem;
+        order: 2;
+        text-align: left;
+      }
+
+      h1 {
+        text-align: left;
+        font-size: 4rem;
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          color: $clr-pink;
+        }
+      }
+      span {
+        background-color: $clr-pink;
+        display: block;
+        width: 23rem;
+        height: 4px;
+        margin: 2rem 0;
+        margin-bottom: 6rem;
+        @include mediaQuery {
+          align-items: center;
+          width: 36rem;
+        }
+      }
+
+      h3 {
+        align-items: center;
+        color: $clr-light;
+        font-size: 1.3rem;
+        max-width: 90%;
+        margin-bottom: 1rem;
+      }
+
+      i {
+        color: $clr-pink;
+        margin-right: 2rem;
+        font-size: 1rem;
+      }
+
+      h4 {
+        color: $clr-pink;
+        font-size: 3rem;
+        margin: 5rem 0;
+      }
+    }
+  }
+
+  &__contacts {
+    padding: 5rem 0;
+    padding-bottom: 20rem;
+    p {
+      text-align: left;
+      font-size: 2.5rem;
+      padding: 5rem 0;
+      max-width: 30%;
+      @include mediaQuery {
+        max-width: 100%;
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+    &__wrapper {
+      @include grid(2, 4rem);
+      @include mediaQuery {
+        @include grid(1, 4rem);
+      }
+    }
+    &__forms {
+      @include mediaQuery {
+        order: 2;
+      }
+      form {
+        input {
+          font-size: 3rem;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          padding-left: 2rem;
+          padding-right: 30.4rem;
+        }
+
+        textarea {
+          font-size: 3.5rem;
+          padding-left: 2rem;
+          padding-top: 2rem;
+        }
+      }
+    }
+
+    &__info {
+      padding-left: 2rem;
+      @include mediaQuery {
+        order: 1;
+      }
+      ul {
+        li {
+          padding: 3rem 0;
+          i {
+            font-size: 3rem;
+            margin-right: 5rem;
+            color: $clr-pink;
+          }
+          a {
+            margin-left: 10rem;
+            color: $clr-light;
+            font-size: 2rem;
+            &:hover {
+              color: $clr-pink;
+            }
+            @include mediaQuery {
+              font-size: 2rem;
+              margin-left: 3rem;
+            }
+          }
+        }
+      }
+    }
+
+    .button {
+      @include mediaQuery {
+        margin-left: 25rem;
+      }
+    }
+  }
+}

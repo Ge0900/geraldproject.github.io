@@ -1,0 +1,15 @@
+/** @format */
+
+.footer {
+  border-top: 1px solid $clr-pink;
+  .p1 {
+    margin-left: 60rem;
+    @include mediaQuery {
+      margin-left: 2rem;
+    }
+  }
+
+  .p2 {
+    margin-right: 2rem;
+  }
+}
